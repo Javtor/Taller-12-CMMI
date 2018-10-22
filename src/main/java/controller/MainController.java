@@ -1,6 +1,7 @@
 package controller;
 
 import java.net.URL;
+import java.util.HashMap;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
@@ -19,6 +20,8 @@ public class MainController implements Initializable {
 	public static final String[] areas = new String[] { "CAR", "CM", "DAR", "IPM", "MA", "OPD", "OPF", "OPM", "OPP",
 			"OT", "PI", "PMC", "PP", "PPQA", "QPM", "RD", "REQM", "RSKM", "SAM", "TS", "VAL", "VER" };
 
+	private HashMap<String, String> hash;
+	
 	@FXML
 	private JFXComboBox<String> comboArea;
 
@@ -105,6 +108,16 @@ public class MainController implements Initializable {
 		}
 		
 		txtTexto.setText(msg);
+	}
+	
+	private void createHash() {
+		hash = new HashMap<>();
+		String m = "SP 1.1 Select Outcomes for Analysis\r\n" + 
+				"SP 1.2 Analyze Causes\r\n" +  
+				"SP 2.1 Implement Action Proposals\r\n" + 
+				"SP 2.2 Evaluate the Effect of Implemented Actions\r\n" + 
+				"SP 2.3 Record Causal Analysis Data ";
+		hash.put("CAR", m);
 	}
 
 	@Override
