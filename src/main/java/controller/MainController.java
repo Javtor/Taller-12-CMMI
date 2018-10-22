@@ -116,8 +116,112 @@ public class MainController implements Initializable {
 				"SP 1.2 Analyze Causes\r\n" +  
 				"SP 2.1 Implement Action Proposals\r\n" + 
 				"SP 2.2 Evaluate the Effect of Implemented Actions\r\n" + 
-				"SP 2.3 Record Causal Analysis Data ";
+				"SP 2.3 Record Causal Analysis Data \n";
 		hash.put("CAR", m);
+		
+		m = "SP 1.1 Establish Guidelines for Decision Analysis\r\n" + 
+				"SP 1.2 Establish Evaluation Criteria\r\n" + 
+				"SP 1.3 Identify Alternative Solutions\r\n" + 
+				"SP 1.4 Select Evaluation Methods\r\n" + 
+				"SP 1.5 Evaluate Alternative Solutions\r\n" + 
+				"SP 1.6 Select Solutions\n";
+		hash.put("DAR", m);
+		
+		m = "SP 1.1 Establish Measurement Objectives\r\n" + 
+				"SP 1.2 Specify Measures\r\n" + 
+				"SP 1.3 Specify Data Collection and Storage Procedures\r\n" + 
+				"SP 1.4 Specify Analysis Procedures\r\n" + 
+				"SP 2.1 Obtain Measurement Data\r\n" + 
+				"SP 2.2 Analyze Measurement Data\r\n" + 
+				"SP 2.3 Store Data and Results\r\n" + 
+				"SP 2.4 Communicate Results \n";
+		hash.put("MA", m);
+		
+		m = "SP 1.1 Establish Organizational Process Needs\r\n" + 
+				"SP 1.2 Appraise the Organization’s Processes\r\n" + 
+				"SP 1.3 Identify the Organization’s Process Improvements\r\n" + 
+				"SP 2.1 Establish Process Action Plans\r\n" + 
+				"SP 2.2 Implement Process Action Plans\r\n" + 
+				"SP 3.1 Deploy Organizational Process Assets\r\n" + 
+				"SP 3.2 Deploy Standard Processes\r\n" + 
+				"SP 3.3 Monitor the Implementation\r\n" + 
+				"SP 3.4 Incorporate Experiences into Organizational Process Assets \n";
+		hash.put("OPF", m);
+		
+		m = "SP 1.1 Establish Quality and Process Performance Objectives\r\n" + 
+				"SP 1.2 Select Processes\r\n" + 
+				"SP 1.3 Establish Process Performance Measures\r\n" + 
+				"SP 1.4 Analyze Process Performance and Establish Process Performance Baselines\r\n" + 
+				"SP 1.5 Establish Process Performance Models \n";
+		hash.put("OPP", m);
+		
+		m = "SP 1.1 Establish an Integration Strategy\r\n" + 
+				"SP 1.2 Establish the Product Integration Environment\r\n" + 
+				"SP 1.3 Establish Product Integration Procedures and Criteria\r\n" + 
+				"SP 2.1 Review Interface Descriptions for Completeness\r\n" + 
+				"SP 2.2 Manage Interfaces\r\n" + 
+				"SP 3.1 Confirm Readiness of Product Components for Integration\r\n" + 
+				"SP 3.2 Assemble Product Components\r\n" + 
+				"SP 3.3 Evaluate Assembled Product Components\r\n" + 
+				"SP 3.4 Package and Deliver the Product or Product Component\n";
+		hash.put("PI", m);
+		
+		m = "SP 1.1 Estimate the Scope of the Project\r\n" + 
+				"SP 1.2 Establish Estimates of Work Product and Task Attributes\r\n" + 
+				"SP 1.3 Define Project Lifecycle Phases\r\n" + 
+				"SP 1.4 Estimate Effort and Cost\r\n" + 
+				"SP 2.1 Establish the Budget and Schedule\r\n" + 
+				"SP 2.2 Identify Project Risks\r\n" + 
+				"SP 2.3 Plan Data Management\r\n" + 
+				"SP 2.4 Plan the Project’s Resources\r\n" + 
+				"SP 2.5 Plan Needed Knowledge and Skills\r\n" + 
+				"SP 2.6 Plan Stakeholder Involvement\r\n" + 
+				"SP 2.7 Establish the Project Plan\r\n" + 
+				"SP 3.1 Review Plans That Affect the Project\r\n" + 
+				"SP 3.2 Reconcile Work and Resource Levels\r\n" + 
+				"SP 3.3 Obtain Plan Commitment \n";
+		hash.put("PP", m);
+		
+		m = "SP 1.1 Establish the Project’s Objectives\r\n" + 
+				"SP 1.2 Compose the Defined Process\r\n" + 
+				"SP 1.3 Select Subprocesses and Attributes\r\n" + 
+				"SP 1.4 Select Measures and Analytic Techniques\r\n" + 
+				"SP 2.1 Monitor the Performance of Selected Subprocesses\r\n" + 
+				"SP 2.2 Manage Project Performance\r\n" + 
+				"SP 2.3 Perform Root Cause Analysis \n";
+		hash.put("QPM", m);
+		
+		m = "SP 1.1 Understand Requirements\r\n" + 
+				"SP 1.2 Obtain Commitment to Requirements\r\n" + 
+				"SP 1.3 Manage Requirements Changes\r\n" + 
+				"SP 1.4 Maintain Bidirectional Traceability of Requirements\r\n" + 
+				"SP 1.5 Ensure Alignment Between Project Work and Requirements\n";
+		hash.put("REQM", m);
+		
+		m = "SP 1.1 Determine Acquisition Type\r\n" + 
+				"SP 1.2 Select Suppliers\r\n" + 
+				"SP 1.3 Establish Supplier Agreements\r\n" + 
+				"SP 2.1 Execute the Supplier Agreement\r\n" + 
+				"SP 2.2 Accept the Acquired Product\r\n" + 
+				"SP 2.3 Ensure Transition of Products\n";
+		hash.put("SAM", m);
+		
+		m = "SP 1.1 Select Products for Validation\r\n" + 
+				"SP 1.2 Establish the Validation Environment\r\n" + 
+				"SP 1.3 Establish Validation Procedures and Criteria\r\n" + 
+				"SP 2.1 Perform Validation\r\n" + 
+				"SP 2.2 Analyze Validation Results\n";
+		hash.put("VAL", m);
+		
+		m = "SP 1.1 Select Work Products for Verification\r\n" + 
+				"SP 1.2 Establish the Verification Environment\r\n" + 
+				"SP 1.3 Establish Verification Procedures and Criteria\r\n" + 
+				"SP 2.1 Prepare for Peer Reviews\r\n" + 
+				"SP 2.2 Conduct Peer Reviews\r\n" + 
+				"SP 2.3 Analyze Peer Review Data\r\n" + 
+				"SP 3.1 Perform Verification\r\n" + 
+				"SP 3.2 Analyze Verification Results \n";
+		hash.put("VER", m);
 	}
 
 	@Override
