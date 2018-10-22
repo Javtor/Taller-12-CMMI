@@ -15,9 +15,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 public class MainController implements Initializable {
-	
-	public static final String[] areas = new String[] {"CAR", "CM", "DAR", "IPM", "MA", "OPD", "OPF", "OPM", "OPP", "OT", "PI", "PMC", "PP", "PPQA", "QPM",
-			"RD", "REQM", "RSKM","SAM","TS","VAL","VER"};
+
+	public static final String[] areas = new String[] { "CAR", "CM", "DAR", "IPM", "MA", "OPD", "OPF", "OPM", "OPP",
+			"OT", "PI", "PMC", "PP", "PPQA", "QPM", "RD", "REQM", "RSKM", "SAM", "TS", "VAL", "VER" };
 
 	@FXML
 	private JFXComboBox<String> comboArea;
@@ -36,31 +36,34 @@ public class MainController implements Initializable {
 
 	@FXML
 	void agregar(ActionEvent event) {
-		String msg = "Área de proceso: "+comboArea.getSelectionModel().getSelectedItem()+"\n";
-		
+		String msg = "Área de proceso: " + comboArea.getSelectionModel().getSelectedItem() + "\n";
+
 		int inicio = comboAct.getSelectionModel().getSelectedIndex();
 		int fin = comboObj.getSelectionModel().getSelectedIndex();
-		
+
 		String[] metas = new String[3];
 		metas[0] = "Achieve Specific Goals";
 		metas[1] = "Institutionalize a Managed Process";
 		metas[2] = "Institutionalize a Defined Process";
-		
-		msg+= "Para alcanzar el nivel de capacidad "+fin+", se deben cumplir las siguientes metas: ";
-				
-		for(int i = inicio; i < fin;i++) {
-			msg+= "GG "+(i+1)+", ";
+
+		msg += "Para alcanzar el nivel de capacidad " + fin + ", se deben cumplir las siguientes metas: ";
+
+		for (int i = inicio; i < fin; i++) {
+			msg += "GG " + (i + 1) + ", ";
 		}
-		
-		msg+= "que consisten en ";
-		
-		for(int i = inicio; i < fin;i++) {
-			msg+= metas[i]+", ";
+
+		msg += "que consisten en";
+
+		for (int i = inicio; i < fin; i++) {
+			msg += " " + metas[i] + ",";
 		}
-		
-//		String[] info = new String[3];
-//		info[0] = 
-		
+
+		msg = msg.substring(0, msg.length() - 1) + ".\n";
+
+		String[] info = new String[3];
+		String m = "Practica: GP 1.1. Descripción: Perform the specific practices of the process area to develop work products and provide services to achieve the specific goals of the process area.\n";
+		info[0] = m;
+
 		txtTexto.setText(msg);
 	}
 
@@ -76,7 +79,7 @@ public class MainController implements Initializable {
 		ObservableList<String> list = FXCollections.observableArrayList(areas);
 		comboArea.setItems(list);
 		comboArea.getSelectionModel().select(0);
-		
+
 		txtTexto.setWrapText(true);
 	}
 
