@@ -61,8 +61,24 @@ public class MainController implements Initializable {
 		msg = msg.substring(0, msg.length() - 1) + ".\n";
 
 		String[] info = new String[3];
-		String m = "Practica: GP 1.1. Descripción: Perform the specific practices of the process area to develop work products and provide services to achieve the specific goals of the process area.\n";
+		String m = "Practica: GP 1.1. Descripcion: Perform the specific practices of the process area to develop work products and provide services to achieve the specific goals of the process area.\n";
 		info[0] = m;
+		
+		
+		
+		
+		m+= "Practica: GP 2.2. Descripcion: Establish and maintain the plan for performing the process.\n";
+		
+		m+= "Practica: GP 2.4. Descripcion: Assign responsibility and authority for performing the process, " + 
+				"developing the work products, and providing the services of the " + 
+				"process. \n";
+		
+		m+= "Practica: GP 2.6. Descripcion: Place selected work products of the process under appropriate " + 
+				"levels of control.\n";
+		
+		m+= "Practica: GP 2.8. Descripcion: Monitor and control the process against the plan for performing " + 
+				"the process and take appropriate corrective action. \n";
+				
 
 		txtTexto.setText(msg);
 	}
